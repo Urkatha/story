@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Wandering Minds | Personal Blog</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts for Storytelling vibe -->
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav>
+        <div class="nav-container">
+            <h1 class="logo">The Wandering <span>Mind</span></h1>
+            <button id="writeBtn" class="btn-primary">Write a Story</button>
+        </div>
+    </nav>
+
+    <main>
+        <!-- The Editor Section (Hidden by default) -->
+        <section id="editorSection" class="hidden">
+            <div class="editor-card">
+                <input type="text" id="postTitle" placeholder="Give your story a title...">
+                <textarea id="postContent" placeholder="Once upon a time..."></textarea>
+                <div class="editor-actions">
+                    <button id="cancelBtn" class="btn-secondary">Cancel</button>
+                    <button id="publishBtn" class="btn-primary">Publish Story</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- The Blog Feed -->
+        <section id="blogFeed">
+            <!-- Stories will appear here dynamically via JS -->
+        </section>
+    </main>
+
+    <!-- Main content ends here -->
+
+<footer class="site-footer">
+   
+    
+    <div class="footer-container">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h2 class="logo">The Wandering Mind</h2>
+                <p class="footer-quote">"Where ordinary moments become meaningful stories."</p>
+            </div>
+            
+            <div class="footer-links">
+                <h3>Explore</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Our Philosophy</a></li>
+                    <li><a href="#">Archives</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-social">
+                <h3>Connect</h3>
+                <div class="social-icons">
+                    <a href="#" title="Instagram">IG</a>
+                    <a href="#" title="Twitter">TW</a>
+                    <a href="#" title="Medium">FB</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2023 The Wandering Mind. Handcrafted for dreamers.</p>
+            <button id="scrollToTop" title="Go to top">↑</button>
+        </div>
+    </div>
+</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
